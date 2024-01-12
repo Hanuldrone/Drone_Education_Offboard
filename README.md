@@ -4,7 +4,7 @@
     mkdir -p ~/ws_education/src
     cd ~/ws_education/src
     catkin init 
-    git clone https://github.com/Hanuldrone/Drone_education_offboard.git
+    git clone https://github.com/Hanuldrone/Drone_Education_Offboard.git
     cd ..
     catkin build
 
