@@ -1,0 +1,23 @@
+<?xml version="2.0"?>
+<package format="2">
+  <name>offboard</name>
+  <version>0.0.0</version>
+  <description>The offboard education package</description>
+
+  <maintainer email="fins0305@gmail.com">HangyoCho</maintainer>
+
+  <license>MIT</license>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>cmake_modules</build_depend>
+  <exec_depend>cmake_modules</exec_depend>
+
+  <export>
+
+    <cpp cflags="`pkg-config --cflags eigen3` -I${prefix}/include `rosboost-cfg --cflags`" 
+         lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -lplanning_models"/>
+  </export>
+</package>
